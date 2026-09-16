@@ -2,21 +2,14 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Code,
-  Server,
-  Database,
-  Wrench,
-  Check,
-  Cpu,
-  Layers,
-  Sparkles,
-} from "lucide-react";
+import { Code, Server, Database, Wrench, Cpu, Sparkles } from "lucide-react";
 import { portfolioData } from "@/data/portfolioData";
 
 export default function Skills() {
   const { skills } = portfolioData;
-  const [activeTab, setActiveTab] = useState<"all" | "frontend" | "backend" | "databases" | "tools">("all");
+  const [activeTab, setActiveTab] = useState<
+    "all" | "frontend" | "backend" | "databases" | "tools"
+  >("all");
 
   const categories = [
     { id: "all", label: "All Skills", icon: Sparkles },
@@ -61,7 +54,8 @@ export default function Skills() {
             Skills & <span className="text-gradient-cyan">Technologies</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            A comprehensive overview of my programming languages, frameworks, state management tools, and developer workflows.
+            A comprehensive overview of my programming languages, frameworks,
+            state management tools, and developer workflows.
           </p>
         </div>
 
@@ -73,10 +67,19 @@ export default function Skills() {
             return (
               <button
                 key={cat.id}
-                onClick={() => setActiveTab(cat.id as any)}
+                onClick={() =>
+                  setActiveTab(
+                    cat.id as
+                      | "all"
+                      | "frontend"
+                      | "backend"
+                      | "databases"
+                      | "tools",
+                  )
+                }
                 className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
                   isActive
-                    ? "bg-gradient-to-r from-sky-500 to-indigo-600 text-white shadow-lg shadow-sky-500/25 scale-105"
+                    ? "bg-linear-to-r from-sky-500 to-indigo-600 text-white shadow-lg shadow-sky-500/25 scale-105"
                     : "glass-card text-slate-400 hover:text-slate-200 hover:bg-slate-800/60"
                 }`}
               >
@@ -119,7 +122,7 @@ export default function Skills() {
                 {/* Progress bar */}
                 <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
                   <div
-                    className="h-full bg-gradient-to-r from-sky-400 to-indigo-500 rounded-full transition-all duration-700 ease-out"
+                    className="h-full bg-linear-to-r from-sky-400 to-indigo-500 rounded-full transition-all duration-700 ease-out"
                     style={{ width: `${skill.level}%` }}
                   />
                 </div>
@@ -135,7 +138,8 @@ export default function Skills() {
               Primary Strengths
             </div>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Extensive focus on React JS, Next.js App Router, TypeScript, Redux, Node.js, Express, and MongoDB.
+              Extensive focus on React JS, Next.js App Router, TypeScript,
+              Redux, Node.js, Express, and MongoDB.
             </p>
           </div>
 
@@ -144,7 +148,8 @@ export default function Skills() {
               Design Systems & Styling
             </div>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Proficient in Tailwind CSS, Bootstrap, React Bootstrap, and Ant Design for rapid and responsive UI implementation.
+              Proficient in Tailwind CSS, Bootstrap, React Bootstrap, and Ant
+              Design for rapid and responsive UI implementation.
             </p>
           </div>
 
@@ -153,7 +158,8 @@ export default function Skills() {
               Deployment & Tooling
             </div>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Hands-on with Git, GitHub version control, Vercel, Render, Netlify, Postman, and modern cloud ecosystems.
+              Hands-on with Git, GitHub version control, Vercel, Render,
+              Netlify, Postman, and modern cloud ecosystems.
             </p>
           </div>
         </div>

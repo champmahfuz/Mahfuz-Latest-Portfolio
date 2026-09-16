@@ -18,6 +18,7 @@ export interface Experience {
   id: string;
   role: string;
   company: string;
+  companyUrl?: string;
   location: string;
   period: string;
   type: string;
@@ -54,9 +55,9 @@ export const portfolioData = {
     cvDownloadUrl: "/Mahfuz_Cv.pdf",
     avatar: "/profile.jpg", // Users can drop their image into public/profile.jpg
     socialLinks: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      facebook: "https://facebook.com",
+      github: "https://github.com/champmahfuz",
+      linkedin: "https://www.linkedin.com/in/mahfuz-rahman517/",
+      facebook: "https://www.facebook.com/champ.mahfuz",
       email: "mailto:mahfuzrahman517@gmail.com",
     },
     metrics: [
@@ -108,6 +109,7 @@ export const portfolioData = {
       id: "symbolic-team",
       role: "Full Stack Web Developer",
       company: "Symbolic Team",
+      companyUrl: "https://symbolicteam.com/",
       location: "Shewrapara, Dhaka",
       period: "01/2026 – Present",
       type: "Full-Time",
@@ -133,6 +135,7 @@ export const portfolioData = {
       id: "othooy-international",
       role: "Full Stack Web Developer",
       company: "Othooy International Ltd",
+      companyUrl: "https://othooy.com/",
       location: "Gulshan 1, Dhaka",
       period: "15/05/2022 – 30/11/2025",
       type: "Full-Time (3.5 Years)",

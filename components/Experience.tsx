@@ -89,10 +89,15 @@ export default function Experience() {
                     </div>
 
                     <div className="flex flex-wrap items-center gap-4 mt-2 text-xs sm:text-sm text-slate-300 font-medium">
-                      <span className="flex items-center gap-1.5 text-sky-400">
+                      <a
+                        href={exp.companyUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-1.5 text-sky-400 hover:text-sky-300 hover:underline transition"
+                      >
                         <Building2 className="w-4 h-4" />
                         {exp.company}
-                      </span>
+                      </a>
                       <span className="flex items-center gap-1.5 text-slate-400">
                         <MapPin className="w-4 h-4 text-slate-400" />
                         {exp.location}

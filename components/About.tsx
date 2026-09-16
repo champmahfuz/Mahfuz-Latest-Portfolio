@@ -51,10 +51,13 @@ export default function About() {
             About Me
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Transforming Ideas into High-Performance <span className="text-gradient-cyan">Web Experiences</span>
+            Transforming Ideas into High-Performance{" "}
+            <span className="text-gradient-cyan">Web Experiences</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Dedicated Full Stack Web Developer based in Dhaka, Bangladesh with an unwavering focus on reliability, scalability, and code excellence.
+            Dedicated Full Stack Web Developer based in Dhaka, Bangladesh with
+            an unwavering focus on reliability, scalability, and code
+            excellence.
           </p>
         </div>
 
@@ -70,7 +73,7 @@ export default function About() {
               className="glass-card glass-card-hover rounded-2xl p-6 text-center border border-white/10 relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-16 h-16 bg-sky-500/5 rounded-full blur-xl pointer-events-none" />
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-300 to-purple-400">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-sky-400 via-indigo-300 to-purple-400">
                 {metric.value}
               </div>
               <div className="text-xs sm:text-sm text-slate-400 font-medium mt-2">
@@ -96,11 +99,21 @@ export default function About() {
             </h3>
 
             <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-              With around <strong>4 years of dedicated industry experience</strong>, I have contributed to large-scale products ranging from full-fledged flight booking travel portals (OTA) to e-commerce stores and internal monitoring systems.
+              With around{" "}
+              <strong>4 years of dedicated industry experience</strong>, I have
+              contributed to large-scale products ranging from full-fledged
+              flight booking travel portals (OTA) to e-commerce stores and
+              internal monitoring systems.
             </p>
 
             <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-              Currently at <strong>Symbolic Team</strong>, I collaborate directly with leadership and the CTO to define product architecture, analyze technical feasibility, and conduct cutting-edge technology research. Previously at <strong>Othooy International Ltd</strong> for 3.5 years, I specialized in data visualization dashboards and cloud deployment tools.
+              Currently at <strong>Symbolic Team</strong>, I collaborate
+              directly with leadership and the CTO to define product
+              architecture, analyze technical feasibility, and conduct
+              cutting-edge technology research. Previously at{" "}
+              <strong>Othooy International Ltd</strong> for 3.5 years, I
+              specialized in data visualization dashboards and cloud deployment
+              tools.
             </p>
 
             <div className="pt-2 space-y-2.5 border-t border-white/10">
@@ -152,10 +165,12 @@ export default function About() {
                   transition={{ delay: idx * 0.1, duration: 0.5 }}
                   className="glass-card glass-card-hover rounded-2xl p-6 border border-white/10 space-y-3"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500/20 to-indigo-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 shadow-sm">
+                  <div className="w-10 h-10 rounded-xl bg-linear-to-tr from-sky-500/20 to-indigo-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 shadow-sm">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <h4 className="text-base font-bold text-white">{pillar.title}</h4>
+                  <h4 className="text-base font-bold text-white">
+                    {pillar.title}
+                  </h4>
                   <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
                     {pillar.description}
                   </p>
