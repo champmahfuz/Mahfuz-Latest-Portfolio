@@ -96,9 +96,9 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} Md Mahfuz Rahman. All rights reserved.
           </p>
-          <p className="flex items-center gap-1.5">
+          {/* <p className="flex items-center gap-1.5">
             <span>Built with Next.js 15, TypeScript & Tailwind CSS</span>
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
